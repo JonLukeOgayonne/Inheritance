@@ -26,11 +26,8 @@ int main() {
 	cin >> year;
 	cin.ignore();
 	//
-	Vehicle myVehicle(modelName, year);
-	//
-	cout << " Vehicle information:" << endl;
-	cout << " Manufacturer: " << myVehicle.getManufacturerName() << endl;
-	cout << " Year Built: " << myVehicle.getYearBuilt() << endl;
+	Vehicle * myVehicle = new Vehicle;
+	myVehicle->displayInfo(modelName, year);
 	//
 	cout << "\n Car:";
 	Car car();

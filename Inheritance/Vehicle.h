@@ -26,5 +26,12 @@ public:
 	int getYearBuilt() {
 		return yearBuilt;
 	}
+	//
+	void displayInfo(string manufacturer, int year) {
+		//
+		cout << " Vehicle information:" << endl;
+		cout << " Manufacturer: " << manufacturer << endl;
+		cout << " Year Built: " << year << endl;
+	}
 };
 #endif // End vehicle declaration.
