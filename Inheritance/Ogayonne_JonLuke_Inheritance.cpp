@@ -29,6 +29,8 @@ int main() {
 	Vehicle * myVehicle = new Vehicle;
 	myVehicle->displayInfo(modelName, year);
 	//
+	delete myVehicle;
+	//
 	cout << "\n Car:";
 	Car car();
 	//
@@ -40,12 +42,8 @@ int main() {
 	cin >> doors;
 	cin.ignore();
 	//
-	Car myCar(modelName, year, doors);
-	//
-	cout << " Vehicle information:" << endl;
-	cout << " Manufacturer: " << myCar.getManufacturerName() << endl;
-	cout << " Year Built: " << myCar.getYearBuilt() << endl;
-	cout << " Doors: " << myCar.getDoors() << endl;
+	Car* myCar = new Car;
+	myCar->displayInfo(modelName, year, doors);
 	//
 	cout << "\n Truck:";
 	Truck truck();
