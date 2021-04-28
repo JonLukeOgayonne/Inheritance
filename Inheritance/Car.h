@@ -20,9 +20,9 @@ public:
 	int getDoors() {
 		return numOfDoors;
 	}
-	//
+	// Display Car data.
 	void displayInfo(string vehicleManufacturer, int vehicleyear, int sumOfDoors) {
-		//
+		// Display information function method.
 		Vehicle::displayInfo(vehicleManufacturer, vehicleyear);
 		cout << " Doors: " << sumOfDoors << endl;
 	}

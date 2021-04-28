@@ -20,5 +20,11 @@ public:
 	int getTowPower() {
 		return towingCapacity;
 	}
+	// Display truck data.
+	void displayInfo(string vehicleManufacturer, int vehicleyear, double towing) {
+		// Display information function method.
+		Vehicle::displayInfo(vehicleManufacturer, vehicleyear);
+		cout << " Doors: " << towing << endl;
+	}
 };
 #endif // End Truck declaration.
